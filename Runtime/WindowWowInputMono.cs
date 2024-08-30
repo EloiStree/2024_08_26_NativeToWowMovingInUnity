@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine.Events;
 using WindowsInput.Native;
 
@@ -34,7 +35,7 @@ public class WindowWowInputMono : AbstractWowMoveInputMono
 
     public void Update()
     {
-        List<WindowsInput.Native.VirtualKeyCode> windowKeys = m_threadListener.GetWindowKey();
+        List<WindowsInput.Native.VirtualKeyCode> windowKeys = m_threadListener.GetWindowKeyAsCopy();
 
         m_inputState.m_moveBackIsDown = windowKeys.Contains(m_moveBack);
         m_inputState.m_moveForwardIsDown = windowKeys.Contains(m_moveForward);
