@@ -1,0 +1,17 @@
+{
+    "name": "be.elab.nativewowmove",
+    "rootNamespace": "",
+    "references": [
+        "be.eloistree.keystrokeutility",
+        "be.elab.wowmove"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
